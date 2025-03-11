@@ -1,34 +1,28 @@
 package com.denis.habibi;
-import org.json.JSONException;
-import org.json.JSONObject;
 
 public class Habit {
+    private String id; // Добавьте уникальный ID
     private String name;
     private String date;
-    private int iconResId;
+    private String userId; // Добавьте ID пользователя
 
-    public Habit(String name, String date, int iconResId) {
+    // Конструктор по умолчанию необходим для Firebase
+    public Habit() {}
+
+    public Habit(String id, String name, String date, String userId) {
+        this.id = id;
         this.name = name;
         this.date = date;
-        this.iconResId = iconResId;
+        this.userId = userId;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public String getDate() {
-        return date;
-    }
-
-    public int getIconResId() {
-        return iconResId;
-    }
-
-    public JSONObject toJson() throws JSONException {
-        JSONObject jsonObject = new JSONObject();
-        jsonObject.put("name", name);
-        jsonObject.put("date", date);
-        return jsonObject;
-    }
+    // Добавьте геттеры и сеттеры для всех полей
+    public String getId() { return id; }
+    public void setId(String id) { this.id = id; }
+    public String getName() { return name; }
+    public void setName(String name) { this.name = name; }
+    public String getDate() { return date; }
+    public void setDate(String date) { this.date = date; }
+    public String getUserId() { return userId; }
+    public void setUserId(String userId) { this.userId = userId; }
 }

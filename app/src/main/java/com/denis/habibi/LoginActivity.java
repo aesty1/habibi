@@ -1,5 +1,7 @@
 package com.denis.habibi;
 
+import static androidx.core.content.ContentProviderCompat.requireContext;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -10,6 +12,7 @@ import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 
@@ -57,6 +60,19 @@ public class LoginActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()){
                             Toast.makeText(LoginActivity.this,"Готово!",Toast.LENGTH_SHORT).show();
+                            AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this);
+                            builder.setTitle("Успешный вход");
+                            builder.setMessage("Вы вошли в аккаунт");
+
+                            // Кнопка "OK" для закрытия диалога
+                            builder.setPositiveButton("OK", (dialog, which) -> {
+                                dialog.dismiss(); // Закрыть диалог
+                                // Дополнительные действия при нажатии (если нужно)
+                            });
+
+                            // Создать и показать диалог
+                            AlertDialog dialog = builder.create();
+                            dialog.show();
                             goNext();
                         }else
                             Toast.makeText(LoginActivity.this, "Такого пользователя не найдено", Toast.LENGTH_SHORT).show();
