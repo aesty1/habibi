@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/bgImage"
+            android:layout_width="match_parent"
+            android:layout_height="1000dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg" />
+
+        <ImageView
+            android:id="@+id/bgImage2"
+            android:layout_width="match_parent"
+            android:layout_height="401dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_below="@id/bgImage2"
+            android:layout_marginTop="20dp"> <!-- Опускаем кнопки ниже второго изображения -->
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black"
+                android:text="Login"
+                android:elevation="5dp"
+                />
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/black"
+                android:textColor="@color/white"
+                android:text="Register"
+                android:elevation="5dp"
+                android:layout_marginTop="20dp"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

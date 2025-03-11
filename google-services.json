@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "759038293085",
+    "firebase_url": "https://project-mayhem-77bc6-default-rtdb.firebaseio.com",
+    "project_id": "project-mayhem-77bc6",
+    "storage_bucket": "project-mayhem-77bc6.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:759038293085:android:ee2adcc1d62b1b34d489b4",
+        "android_client_info": {
+          "package_name": "com.denis.habibi"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyg5vFYM2qVWl5lRvIqjCmnRBGNMHVMpY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <ImageView
+            android:id="@+id/bgImage"
+            android:layout_width="match_parent"
+            android:layout_height="1000dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg" />
+
+
+        <Button
+            android:id="@+id/backBtn"
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:elevation="5dp"
+            android:textSize="20dp"
+            android:background="@drawable/back"
+            android:contentDescription="Forgot Password button, click to reset your password"/>
+
+        <ImageView
+            android:id="@+id/bgImage2"
+            android:layout_width="match_parent"
+            android:layout_height="299dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logo2" />
+
+        <TextView
+            android:layout_width="292dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="250dp"
+            android:text="Login"
+            android:textColor="@color/white"
+            android:textSize="40dp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="310dp"
+            android:text="Please enter your email and password"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="Message prompting user to enter their username and password"/>
+
+        <EditText
+            android:background="@drawable/radius"
+            android:id="@+id/editTextTextEmailAddress2"
+            android:layout_width="288dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="350dp"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:hint="example@gmail.com"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"/>
+
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            android:background="@drawable/radius"
+            android:layout_width="288dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="405dp"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:hint="*******"
+            android:inputType="textPassword"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"/>
+
+        <TextView
+            android:id="@+id/Register"
+            android:layout_width="103dp"
+            android:layout_height="30dp"
+            android:text="Регистрация"
+            android:textSize="16dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="500dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/red"
+            tools:text="Регистрация" />
+
+
+        <Button
+            android:id="@+id/btnlog"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="545dp"
+            android:backgroundTint="@color/red"
+            android:elevation="5dp"
+            android:text="SUBMIT"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="670dp"
+            android:layout_centerHorizontal="true"
+
+            />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
